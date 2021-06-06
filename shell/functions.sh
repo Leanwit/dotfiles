@@ -17,3 +17,10 @@ function recent_dirs() {
 
   cd "$(echo "$selected" | sed "s/\~/$escaped_home/")" || echo "Invalid directory"
 }
+
+function openvpn(){
+  # First argument is the name of the file stored in /root/
+  filename="$1.ovpn"
+  echo "$filename"
+  sudo openvpn --config "/root/$filename"
+}
