@@ -24,3 +24,9 @@ function openvpn(){
   echo "$filename"
   sudo openvpn --config "/root/$filename"
 }
+
+alias dcon="_docker_connect"
+_docker_connect() {
+  containerid=$(docker ps | tail -n +2 | fzf | awk '{print $1}')
+  docker exec -it $containerid bash
+}
