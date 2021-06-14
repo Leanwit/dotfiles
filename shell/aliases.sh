@@ -21,6 +21,7 @@ alias gpsf="git push --force"
 alias gpl="git pull --rebase --autostash"
 alias gb="git branch"
 alias gl='$DOTLY_PATH/bin/dot git pretty-log'
+alias ggpush="git push origin HEAD"
 
 # Utils
 alias k='kill -9'
@@ -28,3 +29,8 @@ alias i.='(idea $PWD &>/dev/null &)'
 alias c.='(code $PWD &>/dev/null &)'
 alias o.='open .'
 alias up='dot package update_all'
+
+# Go to
+alias gtp="cd ~/Projects"
+alias gtd="cd ~/Documents"
+alias gtdw="cd ~/Downloads"
