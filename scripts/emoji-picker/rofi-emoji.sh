@@ -21,7 +21,7 @@
 #
 
 # Where to save the emojis file.
-EMOJI_FILE="/home/leanwit/Documents/scripts/emoji-picker/emojis.txt"
+EMOJI_FILE="emojis.txt"
 
 # Urls of emoji to download.
 # You can remove what you don't need.
