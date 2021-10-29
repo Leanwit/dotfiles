@@ -34,3 +34,6 @@ alias up='dot package update_all'
 alias gtp="cd ~/Projects"
 alias gtd="cd ~/Documents"
 alias gtdw="cd ~/Downloads"
+
+alias node6="~/Programs/node-v6/bin/node"
+alias npm6="~/Programs/node-v6/bin/npm"
