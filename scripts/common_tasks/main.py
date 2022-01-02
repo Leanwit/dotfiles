@@ -5,7 +5,7 @@ from pathlib import Path
 from dotenv import load_dotenv
 
 import sys
-SCRIPTS_FOLDER = "/home/leanwit/.dotfiles/scripts/"
+SCRIPTS_FOLDER = "{}/scripts/".format(os.getenv('DOTFILES_PATH'))
 sys.path.append(SCRIPTS_FOLDER) 
 
 from vscode_projects.list_projects import list_projects
@@ -39,7 +39,6 @@ def main():
   if source_output_index == 3:
     project = list_projects()
     project.execute(project_root_directory)  
-    # print(subprocess.check_output(("python3","/home/leanwit/.dotfiles/scripts/vscode-projects/list_projects.py"), shell=True)
 
 if __name__ == '__main__':
   main()
