@@ -37,3 +37,5 @@ alias gtdw="cd ~/Downloads"
 
 alias node6="~/Programs/node-v6/bin/node"
 alias npm6="~/Programs/node-v6/bin/npm"
+
+alias barracuda="export TERM=xterm;barracudavpn"
